@@ -59,7 +59,7 @@ function Room({room,fromdate,todate}) {
         })
       }
       
-    </Carousel>
+    </Carousel>   
 <p>{room.description}</p>
 
         </Modal.Body>
