@@ -16,7 +16,7 @@ function Loginscreen() {
          const user ={email,password}
          try {
           setLoading(true);
-          const result = (await axios.post('api/users/login',user)).data
+          const result = (await axios.post('https://shiv-rooms.onrender.com/api/users/login',user)).data
           console.log(result)
           setLoading(false);
           

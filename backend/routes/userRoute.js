@@ -37,5 +37,12 @@ try {
 } catch (error) {
     return res.status(400).json({error})
 }
+});
+
+
+router.get('/name',(req,res)=>{
+    res.send({
+        name:'aash maurya'
+    })
 })
 module.exports= router  

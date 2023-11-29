@@ -51,7 +51,7 @@ export function Bookings() {
     async function fetchingData() {
       try {
         setLoading(true);
-        const data = (await axios.get("/api/bookings/getallbookings")).data;
+        const data = (await axios.get("https://shiv-rooms.onrender.com/api/bookings/getallbookings")).data;
         setBookings(data);
         setLoading(false);
       } catch (error) {

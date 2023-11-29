@@ -47,7 +47,7 @@ export function MyBookings(){
  async function fetchingData(){
     try {
         setLoading(true)
-        const data = (await axios.post('/api/bookings/getbookingsbyuserid',{userid:user._id})).data
+        const data = (await axios.post('https://shiv-rooms.onrender.com/api/bookings/getbookingsbyuserid',{userid:user._id})).data
     console.log(data)
     setBookings(data)
     setLoading(false)

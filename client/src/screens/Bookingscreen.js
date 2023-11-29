@@ -67,7 +67,7 @@ fetchingData();
       totaldays
      }
      try {
-      const result = await axios.post('/api/bookings/bookroom',bookingDetails)
+      const result = await axios.post('https://shiv-rooms.onrender.com/api/bookings/bookroom',bookingDetails)
       Swal.fire('congrats','Room Booked Successfully','success').then(e=>{
         window.location.href= '/profile'
       })

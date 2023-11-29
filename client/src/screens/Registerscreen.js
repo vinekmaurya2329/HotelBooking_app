@@ -26,7 +26,7 @@ const [secretkey,setSecretkey]= useState('')
     const user ={name,email,password,cpassword,type}
     try {
       setLoading(true)
-      const result = await axios.post('api/users/register',user).data
+      const result = await axios.post('https://shiv-rooms.onrender.com/api/users/register',user).data
       setLoading(false)
       setSuccess(true)
       setName('')

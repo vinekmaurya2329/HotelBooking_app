@@ -9,6 +9,7 @@ import Loginscreen from './screens/Loginscreen';
 import Profilescreen from './screens/Profilescreen';
 import Adminscreen from './screens/Adminscreen';
 import Landingscreen from './screens/Landingscreen';
+import Increase from './components/Increase';
 
 
 
@@ -26,6 +27,7 @@ function App() {
  <Route path='/profile' element={<Profilescreen/>}/>
 <Route path='/admin' element={<Adminscreen/>}/>
 <Route path='/' element={<Landingscreen/>}/>
+
     </Routes>
     </BrowserRouter>
     </div>
