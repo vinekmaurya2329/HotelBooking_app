@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-var mongoURL = 'mongodb+srv://vinekmaurya2329:vinek7068594746@cluster0.5iwx2uw.mongodb.net/mern-rooms'; 
-
+var mongoURL = process.env.URL
 mongoose.connect(mongoURL,{useUnifiedTopology:true,useNewUrlParser:true});
 var connection = mongoose.connection
 
